@@ -11,7 +11,7 @@ leaderboard_description: leaderboard description
 evaluation_script: evaluation_script.zip
 remote_evaluation: False
 is_docker_based: False
-start_date: 2023-08-09 00:00:00
+start_date: 2024-09-01 00:00:00
 end_date: 2099-05-31 23:59:59
 published: True
 
@@ -35,12 +35,12 @@ leaderboard:
 
 challenge_phases:
   - id: 1
-    name: Dev Phase
+    name: Challenge 1
     description: templates/challenge_phase_1_description.html
     leaderboard_public: False
     is_public: True
     is_submission_public: True
-    start_date: 2019-01-19 00:00:00
+    start_date: 2024-09-01 00:00:00
     end_date: 2099-04-25 23:59:59
     test_annotation_file: annotations/mmworld.json
     codename: dev
@@ -56,21 +56,16 @@ challenge_phases:
         is_visible: True
       - name: publication_url
         is_visible: True
-    submission_meta_attributes:
-      - name: TextAttribute
-        description: Sample
-        type: text
-        required: False
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".json"
   - id: 2
-    name: Test Phase
+    name: Challenge 2
     description: templates/challenge_phase_2_description.html
     leaderboard_public: True
     is_public: True
     is_submission_public: True
-    start_date: 2019-01-01 00:00:00
+    start_date: 2024-09-01 00:00:00
     end_date: 2099-05-24 23:59:59
     test_annotation_file: annotations/mmworld.json
     codename: test
@@ -86,10 +81,6 @@ challenge_phases:
         is_visible: True
       - name: publication_url
         is_visible: True
-    submission_meta_attributes:
-      - name: TextAttribute
-        description: Sample
-        type: text
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
 
